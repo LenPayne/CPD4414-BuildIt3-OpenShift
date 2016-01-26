@@ -35,7 +35,7 @@ public class DBSample {
 
         String host = System.getenv("OPENSHIFT_MYSQL_DB_HOST");
         String port = System.getenv("OPENSHIFT_MYSQL_DB_PORT");
-        String name = "people";
+        String name = "sample";
         String url = "jdbc:mysql://" + host + ":" + port + "/" + name;
         String username = System.getenv("OPENSHIFT_MYSQL_DB_USERNAME");
         String password = System.getenv("OPENSHIFT_MYSQL_DB_PASSWORD");
@@ -49,7 +49,7 @@ public class DBSample {
             JsonArray arr = new JsonArray();
             Connection conn = getConnection();
             Statement stmt = conn.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT * FROM sample");
+            ResultSet rs = stmt.executeQuery("SELECT * FROM people");
             while (rs.next()) {
                 JsonObject obj = new JsonObject();
                 obj.addProperty("id", rs.getInt("id"));
