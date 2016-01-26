@@ -14,18 +14,14 @@
     </head>
     <body>
         <h1>Goodnight Moon!</h1>
-        <%  String strId = request.getParameter("id");
-            out.println("ID: " + strId);
-            for (String n : request.getParameterValues("id"))
-                out.print("<p>"+n+"</p>");
-            if (strId != null) {
+        <%  String strId = request.getParameter("id");            
+            if (strId != null && !strId.isEmpty()) {
                 try {
                     int id = Integer.parseInt(strId);
                     out.print(DBSample.getJSON(id));
                 } catch (NumberFormatException ex) {
                     out.print("Error with ID. " + strId + " is not a number.");
                 }
-
             } else {
                 out.print(DBSample.getJSON());
             }
