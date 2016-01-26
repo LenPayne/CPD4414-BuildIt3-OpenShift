@@ -28,7 +28,7 @@
                 out.print(DBSample.getJSON());
             }
         %>
-        <p><a class="btn btn-primary" href="/dbsample.jsp">Reload</a></p>
-        <form method="GET" action="/dbsample.jsp">Query By ID: <input name="id" /><input type="submit" class="btn btn-default" /></form>                
+        <p><a class="btn btn-primary" href="#">Reload</a></p>
+        <form method="GET" action="#">Query By ID: <input name="id" /><input type="submit" class="btn btn-default" /></form>                
     </body>
 </html>
