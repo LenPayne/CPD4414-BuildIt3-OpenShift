@@ -32,11 +32,11 @@
                     }
                 %>
             </div>
-            <div class="form-group"><a class="btn btn-primary" href="#">Reload</a></div>
-            <form method="GET" class="form" action="#">
+            <div class="form-group col-md-12"><a class="btn btn-primary" href="#">Reload</a></div>
+            <form method="GET" class="form col-md-12" action="#">
                 <div class="form-group">
                     <label>
-                        Query By ID: <input class="form-control" name="id" />
+                        Query By ID: <input class="form-control" type="text" name="id" />
                     </label>
                 </div>
                 <div class="form-group">
