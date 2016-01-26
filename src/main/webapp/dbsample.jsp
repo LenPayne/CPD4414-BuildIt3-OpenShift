@@ -10,10 +10,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Database Sample Page</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <h1>Goodnight Moon!</h1>
         <%  String strId = request.getParameter("id");            
             if (strId != null && !strId.isEmpty()) {
                 try {
@@ -26,5 +28,7 @@
                 out.print(DBSample.getJSON());
             }
         %>
+        <p><a class="btn btn-primary" href="/dbsample.jsp">Reload</a></p>
+        <form method="GET" action="/dbsample.jsp">Query By ID: <input name="id" /><input type="submit" class="btn btn-default" /></form>                
     </body>
 </html>
