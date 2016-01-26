@@ -12,4 +12,4 @@ This demo app assumes there is a MySQL database connected to the OpenShift app, 
     INSERT INTO people (name, bio) VALUES ('Len', 'Goofy-looking Professor');
     SELECT * FROM people;
 
-The Database Sample is reached via /dbsample.jsp on the web container.
+The Database Sample is reached via /index.jsp on the web container.
