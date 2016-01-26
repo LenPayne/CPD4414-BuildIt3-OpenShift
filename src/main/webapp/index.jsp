@@ -32,7 +32,7 @@
                     }
                 %>
             </div>
-            <div class="form-group col-md-12"><a class="btn btn-primary" href="#">Reload</a></div>
+            <div class="form-group col-md-12"><a class="btn btn-primary" href="/index.jsp">Reload</a></div>
             <form method="GET" class="form col-md-12" action="#">
                 <div class="form-group">
                     <label>
