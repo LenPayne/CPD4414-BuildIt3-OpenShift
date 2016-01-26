@@ -15,7 +15,9 @@
     <body>
         <h1>Hello World!</h1>
         <%  String strId = request.getParameter("id");
-            if (!strId.isEmpty()) {
+            for (String n : request.getParameterValues("id"))
+                out.print("<p>"+n+"</p>");
+            if (strId != null) {
                 try {
                     int id = Integer.parseInt(strId);
                     out.print(DBSample.getJSON(id));
